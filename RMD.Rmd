@@ -1,3 +1,72 @@
+---
+title: "Untitled"
+output:
+  html_document:
+    toc: yes
+    toc_depth: '4'
+    df_print: paged
+    toc_float: true
+  html_notebook:
+    toc: yes
+    toc_depth: 4
+    df_print: paged
+    toc_float:
+      collapsed: yes
+      smooth_scroll: yes
+    theme: united
+    highlight: tango
+    code_folding: show
+date: "2023-11-06"
+---
 
-y <- 2**2
-cars$dist
+
+
+1.Wie verschaffst du dir am schnellsten einen Überblick über Namen und Datentypen aller Attribute eines Dataframes? 
+```{r}
+library(tidyverse)
+glimpse(diamonds)
+```
+
+
+2. Welche Alternativen gibt es zur Beantwortung der vorangehenden Frage und worin bestehen die Un- terschiede? 
+```{r}
+summary(diamonds)
+```
+
+3. Welche Möglichkeiten kennst du, um die Anzahl Beobachtungen und Attribute in einem Dataframe zu bestimmen? 
+```{r echo=TRUE}
+dim(diamonds)
+```
+
+
+4. Welche Funktionen geben dir schnell einen Überblick über die Verteilungscharakteristika aller Attribute eines Dataframes? 
+```{r}
+summary(mtcars)
+```
+
+
+5. Wie erhälst du am schnellsten eine Häufigkeitstabelle für ein kategoriales Attribut eines Dataframes? 
+```{r}
+table(mtcars$cyl)
+```
+
+
+6. Wie gehst du vor, um die Dateninhalte eines Dataframes anhand einer Zufallsstichprobe mit 10 Beobachtungen zu überprüfen? 
+
+
+7. Wie gehst du vor um die Dateninhalte eines Dataframes anhand einer Zufallsstichprobe mit 10% der Beobachtungen zu überprüfen? 
+
+
+8. Wie gehst du vor um eine erzeugte Zufallsstichprobe mit 10 Beobachtungen zu reproduzieren, d.h. dieselben 10 Beobachtungen wieder zu erhalten? 
+
+
+9. Wie gehst du vor, um an erster Stelle des Dataframe ein neues Attribut zu konstruieren, welches die geordneten Beobachtungen des Dataframes fortlaufend nummeriert und als erste Spalte im Dataframe erscheint? 
+
+
+10. Wie gehst du vor, um sicherzustellen, dass ein Primärschlüssel wirklich die notwendigen Eigenschaften besitzt? 
+
+
+11. Wie gehst du vor, um für ein Dataframe die Verteilung der Dezile einer kontinuierlichen Variable auszugeben?
+
+
+
