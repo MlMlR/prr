@@ -19,48 +19,24 @@ output:
 date: "2023-11-06"
 ---
 
-
-
-1.Wie verschaffst du dir am schnellsten einen Überblick über Namen und Datentypen aller Attribute eines Dataframes? 
 ```{r}
-glimpse(diamonds)
-str(diamonds)
+install.packages("tidyverse")
+library(tidyverse)
+installed.packages("ggpairs")
+library(ggpairs)
 ```
 
 
-2. Welche Alternativen gibt es zur Beantwortung der vorangehenden Frage und worin bestehen die Un- terschiede? 
 ```{r}
-summary(diamonds)
+x <- c(1,5,3,9,7)
+y <- c(1,5,3,9,7)
+x_mean <- mean(x)
+y_mean <- mean(y)
+ggpairs(data.frame(x,y))
 ```
 
-3. Welche Möglichkeiten kennst du, um die Anzahl Beobachtungen und Attribute in einem Dataframe zu bestimmen? 
-```{r echo=TRUE}
-dim(diamonds)
+```{r}
 ```
-
-
-4. Welche Funktionen geben dir schnell einen Überblick über die Verteilungscharakteristika aller Attribute eines Dataframes? 
-
-
-5. Wie erhälst du am schnellsten eine Häufigkeitstabelle für ein kategoriales Attribut eines Dataframes? 
-
-
-6. Wie gehst du vor, um die Dateninhalte eines Dataframes anhand einer Zufallsstichprobe mit 10 Beobachtungen zu überprüfen? 
-
-
-7. Wie gehst du vor um die Dateninhalte eines Dataframes anhand einer Zufallsstichprobe mit 10% der Beobachtungen zu überprüfen? 
-
-
-8. Wie gehst du vor um die oben erzeugte Zufallsstichprobe mit 10 Beobachtungen zu reproduzieren, d.h. dieselben 10 Beobachtungen wieder zu erhalten? 
-
-
-9. Wie gehst du vor, um an erster Stelle des Dataframe ein neues Attribut zu konstruieren, welches die geordneten Beobachtungen des Dataframes fortlaufend nummeriert und als erste Spalte im Dataframe erscheint? 
-
-
-10. Wie gehst du vor, um sicherzustellen, dass ein Primärschlüssel wirklich die notwendigen Eigen- schaften besitzt? 
-
-
-11. Wie gehst du vor, um für ein Dataframe die Verteilung der Dezile einer kontinuierlichen Variable auszugeben?
 
 
 
